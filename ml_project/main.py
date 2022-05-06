@@ -9,7 +9,7 @@ import utils
 def main(args):
     level = logging.DEBUG if args.debug else logging.INFO
     setup_logger(
-        out_file='../logging_data/file.log',
+        out_file='../outputs/file.log',
         stdout_level=level,
         file_level=level
         )
@@ -33,22 +33,22 @@ if __name__ == '__main__':
     mode_type = parser.add_mutually_exclusive_group()
     mode_type.add_argument('--train', action='store_true', help='Train model')
     mode_type.add_argument('--inference', action='store_true', help='Inference model')
-    parser.add_argument('-d', '--data_path', default='../data/heart_cleveland_upload.csv', help='Path to dataset')
+    parser.add_argument('-d', '--data_path', default='./data/heart_cleveland_upload.csv', help='Path to dataset')
     parser.add_argument('-C', default=10, help='l2 regularization parameter')
     # add only for inference
     parser.add_argument(
         '--stats_path',
-        default='../eda_stats/column_mean_std_stats.sav',
+        default='../outputs/column_mean_std_stats.sav',
         help='Path statistical train data'
         )
     parser.add_argument(
         '--model_path',
-        default='../models/model.pkl',
+        default='../outputs/model.pkl',
         help='Path statistical train data'
         )
     parser.add_argument(
         '--results_path',
-        default='../results/results.csv',
+        default='../outputs/results.csv',
         help='Path to save predictions'
         )
     parser.add_argument(

@@ -1,0 +1,24 @@
+2022-05-06 21:53:15,503 - INFO - setup_logger - logger set up
+2022-05-06 21:53:15,504 - INFO - load_data - Downloading data from ../data/heart_cleveland_upload.csv
+2022-05-06 21:53:34,466 - INFO - setup_logger - logger set up
+2022-05-06 21:53:34,466 - INFO - load_data - Downloading data from ./data/heart_cleveland_upload.csv
+2022-05-06 21:53:34,504 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ../eda_stats/column_mean_std_stats.sav
+2022-05-06 21:53:54,664 - INFO - setup_logger - logger set up
+2022-05-06 21:53:54,664 - INFO - load_data - Downloading data from ./data/heart_cleveland_upload.csv
+2022-05-06 21:53:54,684 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-06 21:54:34,740 - INFO - setup_logger - logger set up
+2022-05-06 21:54:34,740 - INFO - load_data - Downloading data from ./data/heart_cleveland_upload.csv
+2022-05-06 21:54:34,760 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-06 21:54:50,993 - INFO - setup_logger - logger set up
+2022-05-06 21:54:50,993 - INFO - load_data - Downloading data from ./data/heart_cleveland_upload.csv
+2022-05-06 21:54:51,013 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ../outputs/column_mean_std_stats.sav
+2022-05-06 21:54:51,016 - INFO - __init__ - Creating Logistic regression with C = 10
+2022-05-06 21:54:51,016 - INFO - fit - Fitting model to dataset with feature sizes: 297 x 28 and labels size: 297
+2022-05-06 21:54:51,050 - INFO - predict - Predicting model on dataset with sizes: 297 x 28
+2022-05-06 21:54:51,056 - INFO - main - Metrics evaluation on training data {'accuracy': 0.8653198653198653, 'roc_auc': 0.8618841240875912, 'f1_score': 0.8484848484848484}
+2022-05-06 21:55:36,878 - INFO - setup_logger - logger set up
+2022-05-06 21:55:36,878 - INFO - load_data - Downloading data from ./data/testing.csv
+2022-05-06 21:55:36,881 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ../outputs/column_mean_std_stats.sav
+2022-05-06 21:55:36,898 - INFO - __init__ - Creating Logistic regression with C = 10
+2022-05-06 21:55:36,898 - INFO - predict - Predicting model on dataset with sizes: 297 x 28
+2022-05-06 21:55:36,900 - INFO - save_predictions - Saving predictions with size 297 for inference to ../outputs/results.csv

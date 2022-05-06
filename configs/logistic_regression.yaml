@@ -1,0 +1,5 @@
+model: LogisticRegression
+params:
+    penalty_type: "l2"
+    lambda: 10
+random_state: 42
