@@ -1,10 +1,18 @@
-import os
 import argparse
+import os
+import logging
 
+from logger import setup_logger, LOGGER
 import utils
 
 
 def main(args):
+    level = logging.DEBUG if args.debug else logging.INFO
+    setup_logger(
+        out_file='../logging_data/file.log',
+        stdout_level=level,
+        file_level=level
+        )
     data = utils.load_data(args.data_path)
     features = utils.feature_extraction(data, args.stats_path, args.train)
     model = utils.LogisticRegressionModel(args.C, args.model_path)
@@ -16,8 +24,8 @@ def main(args):
     else:
         model.fit(features['features'], features['labels'])
         y_pred = model.predict(features['features'])
-        # replace with logger
-        print(utils.get_metrics(features['labels'], y_pred))
+        metrics = utils.get_metrics(features['labels'], y_pred)
+        LOGGER.info(f'Metrics evaluation on training data {metrics}')
 
 
 if __name__ == '__main__':
@@ -43,5 +51,8 @@ if __name__ == '__main__':
         default='../results/results.csv',
         help='Path to save predictions'
         )
+    parser.add_argument(
+        '--debug', action='store_true'
+    )
     args = parser.parse_args()
     main(args)
