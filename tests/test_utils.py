@@ -11,16 +11,16 @@ sys.path.insert(0, parentdir)
 
 import ml_project
 
-PATH_TO_REAL_DATASET = '../ml_project/data/heart_cleveland_upload.csv'
-REAL_COLUMNS = pd.read_csv(PATH_TO_REAL_DATASET).columns
-FAKE_DATA_SMALL = pd.DataFrame.from_dict(
-    {column: [0] for column in REAL_COLUMNS}
-    )
+# PATH_TO_REAL_DATASET = '../ml_project/data/heart_cleveland_upload.csv'
+# REAL_COLUMNS = pd.read_csv(PATH_TO_REAL_DATASET).columns
+# FAKE_DATA_SMALL = pd.DataFrame.from_dict(
+#     {column: [0] for column in REAL_COLUMNS}
+#     )
 
-FAKE_DATA_BIG = pd.DataFrame.from_dict({
-    column: np.random.randint(low=0, high=1 + np.random.randint(20), size=1000) 
-    for column in REAL_COLUMNS
-    })
+# FAKE_DATA_BIG = pd.DataFrame.from_dict({
+#     column: np.random.randint(low=0, high=1 + np.random.randint(20), size=1000) 
+#     for column in REAL_COLUMNS
+#     })
 
 
 def test_logistic_regression_model():
