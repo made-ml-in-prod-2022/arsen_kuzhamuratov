@@ -2,7 +2,7 @@ import argparse
 import os
 import logging
 
-from logger import setup_logger, LOGGER
+from utils import setup_logger, LOGGER
 import utils
 
 

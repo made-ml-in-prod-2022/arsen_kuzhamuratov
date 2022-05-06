@@ -1,0 +1,24 @@
+2022-05-06 15:48:37,174 - INFO - setup_logger - logger set up
+2022-05-06 15:48:37,175 - INFO - load_data - Downloading data from ../data/heart_cleveland_upload.csv
+2022-05-06 15:48:37,177 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-06 15:48:37,177 - DEBUG - feature_extraction - Prepare dataset for training...
+2022-05-06 15:48:37,179 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-06 15:48:37,180 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-06 15:48:37,193 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-06 15:48:37,194 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ../eda_stats/column_mean_std_stats.sav
+2022-05-06 15:48:37,197 - INFO - __init__ - Creating Logistic regression with C = 10
+2022-05-06 15:48:37,198 - INFO - fit - Fitting model to dataset with feature sizes: 297 x 28 and labels size: 297
+2022-05-06 15:48:37,214 - DEBUG - save_weights - Saving model weights to ../models/model.pkl
+2022-05-06 15:48:37,215 - INFO - predict - Predicting model on dataset with sizes: 297 x 28
+2022-05-06 15:48:37,218 - INFO - main - Metrics evaluation on training data {'accuracy': 0.8653198653198653, 'roc_auc': 0.8618841240875912, 'f1_score': 0.8484848484848484}
+2022-05-06 15:48:44,633 - INFO - setup_logger - logger set up
+2022-05-06 15:48:44,634 - INFO - load_data - Downloading data from ../data/heart_cleveland_upload.csv
+2022-05-06 15:48:44,637 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ../eda_stats/column_mean_std_stats.sav
+2022-05-06 15:48:44,653 - INFO - __init__ - Creating Logistic regression with C = 10
+2022-05-06 15:48:44,653 - INFO - predict - Predicting model on dataset with sizes: 297 x 29
+2022-05-06 15:49:03,043 - INFO - setup_logger - logger set up
+2022-05-06 15:49:03,043 - INFO - load_data - Downloading data from ../data/testing.csv
+2022-05-06 15:49:03,047 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ../eda_stats/column_mean_std_stats.sav
+2022-05-06 15:49:03,063 - INFO - __init__ - Creating Logistic regression with C = 10
+2022-05-06 15:49:03,063 - INFO - predict - Predicting model on dataset with sizes: 297 x 28
+2022-05-06 15:49:03,065 - INFO - save_predictions - Saving predictions with size 297 for inference to ../results/results.csv

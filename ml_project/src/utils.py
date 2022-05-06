@@ -1,3 +1,6 @@
+import logging
+import sys
+
 import pickle
 import pandas as pd
 import numpy as np
@@ -7,7 +10,30 @@ import seaborn as sns
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import roc_auc_score, accuracy_score, f1_score
 
-from logger import LOGGER
+
+
+LOGGER = logging.getLogger()
+FORMATTER = logging.Formatter("%(asctime)s - %(levelname)s - %(funcName)s - %(message)s")
+
+
+def setup_logger(out_file=None, stdout=True, stdout_level=logging.INFO, file_level=logging.DEBUG):
+    LOGGER.handlers = []
+    LOGGER.setLevel(min(stdout_level, file_level))
+
+    if stdout:
+        handler = logging.StreamHandler(sys.stdout)
+        handler.setFormatter(FORMATTER)
+        handler.setLevel(stdout_level)
+        LOGGER.addHandler(handler)
+
+    if out_file is not None:
+        handler = logging.FileHandler(out_file)
+        handler.setFormatter(FORMATTER)
+        handler.setLevel(file_level)
+        LOGGER.addHandler(handler)
+
+    LOGGER.info("logger set up")
+    return LOGGER
 
 
 class LogisticRegressionModel:
@@ -23,7 +49,9 @@ class LogisticRegressionModel:
 
     def fit(self, X, y):
         # check x, y
-        LOGGER.info(f'Fitting model to dataset with feature sizes: {len(X)} x {len(X.columns)} and labels size: {len(y)}')
+        LOGGER.info(
+            f'Fitting model to dataset with feature sizes: {len(X)} x {len(X.columns)} and labels size: {len(y)}'
+            )
         self.clf.fit(X, y)
         self.save_weights()
 
