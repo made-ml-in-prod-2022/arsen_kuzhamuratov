@@ -46,7 +46,7 @@ def test_divide_columns_by_type_mid_dataset():
 def test_train_feature_extraction_grad_boosting():
     features = utils.feature_extraction(
         data=FAKE_DATA_MID,
-        model_type='GradientBoosting', 
+        model_type='GradientBoosting',
         filename=FILENAME,
         train=True)
     assert 14 == len(features['labels'])
@@ -73,12 +73,12 @@ def test_valid_feature_extraction_log_reg():
     assert 55 + 3 == len(features['features'].columns)
 
 
-def test_valid_feature_extraction_log_reg():
+def test_valid_feature_extraction_log_reg_single_line_input():
     features = utils.feature_extraction(
         data=VALID_SINGLE_LINE,
         model_type='LogisticRegression',
         filename=FILENAME,
         train=False)
-    assert None == features['labels']
+    assert features['labels'] is None
     assert 55 + 3 == len(features['features'].columns)
     assert 5 == np.unique(features['features'].values).shape[0]

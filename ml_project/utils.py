@@ -163,7 +163,7 @@ def feature_extraction(data, model_type, filename, train=True):
         column_type_dict = eda_stats['column_type']
         for column in column_type_dict['categorical']:
             X = one_hot_encoding_by_column(X, column)
-        X= X.reindex(columns=eda_stats['columns'], fill_value=0)
+        X = X.reindex(columns=eda_stats['columns'], fill_value=0)
 
         LOGGER.debug(f'Data shape after one hot encoding: {len(X.columns)}')
     for column in column_type_dict['continuous']:
@@ -173,6 +173,7 @@ def feature_extraction(data, model_type, filename, train=True):
         'features': X,
         'labels': y_true
         }
+
 
 def feature_extraction_with_test_train_split(data, model_type, filename, **kwards):
     data_train, data_valid = train_test_split(data, **kwards)

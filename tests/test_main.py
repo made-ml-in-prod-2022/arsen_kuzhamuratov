@@ -64,6 +64,7 @@ def test_train_log_reg(capsys):
     assert 'f1_score' in captured.out
     assert os.path.exists('./outputs/logistic_regression.pkl')
 
+
 INFERENCE_NAMESPACE_LOG_REG = argparse.Namespace(
     config_path='./configs/logistic_regression.yaml',
     data_path='./ml_project/data/heart_cleveland_upload.csv',
