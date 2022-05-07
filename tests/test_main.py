@@ -1,9 +1,6 @@
 import argparse
 import os
-import yaml
 from ml_project.main import main
-
-
 
 
 TRAINING_NAMESPACE_GRAD_BOOST = argparse.Namespace(
@@ -17,8 +14,9 @@ TRAINING_NAMESPACE_GRAD_BOOST = argparse.Namespace(
     log_path='./outputs/file.log',
     )
 
+
 def test_train_grad_boosting(capsys):
-    res = main(TRAINING_NAMESPACE_GRAD_BOOST)
+    main(TRAINING_NAMESPACE_GRAD_BOOST)
     captured = capsys.readouterr()
     assert '' == captured.err
     assert 'accuracy' in captured.out
@@ -40,7 +38,7 @@ INFERENCE_NAMESPACE_GRAD_BOOST = argparse.Namespace(
 
 
 def test_inference_grad_boosting(capsys):
-    res = main(INFERENCE_NAMESPACE_GRAD_BOOST)
+    main(INFERENCE_NAMESPACE_GRAD_BOOST)
     captured = capsys.readouterr()
     assert '' == captured.err
     assert os.path.exists('./outputs/prediction.csv')
@@ -57,13 +55,14 @@ TRAINING_NAMESPACE_LOG_REG = argparse.Namespace(
     log_path='./outputs/file.log',
     )
 
+
 def test_train_log_reg(capsys):
-    res = main(TRAINING_NAMESPACE_LOG_REG)
+    main(TRAINING_NAMESPACE_LOG_REG)
     captured = capsys.readouterr()
     assert 'accuracy' in captured.out
     assert 'roc_auc' in captured.out
     assert 'f1_score' in captured.out
-    assert os.path.exists('./outputs/logistic_regression.pkl')   
+    assert os.path.exists('./outputs/logistic_regression.pkl')
 
 INFERENCE_NAMESPACE_LOG_REG = argparse.Namespace(
     config_path='./configs/logistic_regression.yaml',
@@ -78,7 +77,7 @@ INFERENCE_NAMESPACE_LOG_REG = argparse.Namespace(
 
 
 def test_inference_log_reg(capsys):
-    res = main(INFERENCE_NAMESPACE_LOG_REG)
+    main(INFERENCE_NAMESPACE_LOG_REG)
     captured = capsys.readouterr()
     assert '' == captured.err
     assert os.path.exists('./outputs/prediction.csv')
