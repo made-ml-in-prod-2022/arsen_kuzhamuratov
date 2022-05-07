@@ -1,5 +1,4 @@
 import argparse
-import os
 import logging
 
 import yaml
@@ -8,12 +7,11 @@ from ml_project import utils
 from ml_project.utils import setup_logger, LOGGER
 
 
-
 def main(args):
     # loading model config
     with open(args.config_path) as file:
         model_config = yaml.load(file, Loader=yaml.FullLoader)
-    
+
     # setup logger
     level = logging.DEBUG if args.debug else logging.INFO
     setup_logger(
@@ -23,8 +21,10 @@ def main(args):
         )
     # loading data and creating model
     data = utils.load_data(args.data_path)
-    model = utils.ClassificationModel(model_config['model'],
-                                        model_config['model_path'], **model_config['params'])
+    model = utils.ClassificationModel(
+        model_config['model'],
+        model_config['model_path'], **model_config['params']
+        )
     # inference or training
     if args.inference:
         model.load_weights()

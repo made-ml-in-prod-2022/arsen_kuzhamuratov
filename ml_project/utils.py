@@ -4,14 +4,11 @@ import sys
 import pickle
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score, accuracy_score, f1_score
-
 
 
 LOGGER = logging.getLogger()
@@ -46,8 +43,8 @@ class ClassificationModel:
     def __init__(self, model_type, filename, **kwards):
         # add params
         LOGGER.info(f'Creating {model_type} with {kwards}')
-        self.clf = (LogisticRegression(**kwards) if model_type == 'LogisticRegression' 
-                    else GradientBoostingClassifier(**kwards)) 
+        self.clf = (LogisticRegression(**kwards) if model_type == 'LogisticRegression'
+                    else GradientBoostingClassifier(**kwards))
         self.filename = filename
 
     def fit(self, X, y):
