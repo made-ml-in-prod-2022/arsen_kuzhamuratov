@@ -1,5 +1,11 @@
 model: LogisticRegression
 params:
-    penalty_type: "l2"
-    lambda: 10
-random_state: 42
+    C: 10
+    penalty: 'l2'
+    max_iter: 1000
+    random_state: 42
+train_test_split:
+    shuffle: True
+    test_size: 0.2
+    random_state: 42
+model_path: './outputs/logistic_regression.pkl'

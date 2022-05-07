@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import roc_auc_score, accuracy_score, f1_score
 
 
@@ -36,15 +38,16 @@ def setup_logger(out_file=None, stdout=True, stdout_level=logging.INFO, file_lev
     return LOGGER
 
 
-class LogisticRegressionModel:
+class ClassificationModel:
     """
-    Main class for fitting, predicting, saving and loading weights of
-    sklearn logistic regression
+    Main class for fitting, predicting, saving and
+    loading weights of sklearn logistic regression
     """
-    def __init__(self, l2_reg_parameter, filename):
+    def __init__(self, model_type, filename, **kwards):
         # add params
-        LOGGER.info(f'Creating Logistic regression with C = {l2_reg_parameter}')
-        self.clf = LogisticRegression(C=l2_reg_parameter)
+        LOGGER.info(f'Creating {model_type} with {kwards}')
+        self.clf = (LogisticRegression(**kwards) if model_type == 'LogisticRegression' 
+                    else GradientBoostingClassifier(**kwards)) 
         self.filename = filename
 
     def fit(self, X, y):
@@ -120,17 +123,28 @@ def load_stats(filename):
     return stats
 
 
-def feature_extraction(data, filename, train=True):
-    # check data for nulls
-    if train:
-        LOGGER.debug("Prepare dataset for training...")
+def feature_extraction(data, model_type, filename, train=True):
+    if 'condition' in data.columns:
         y_true = data['condition']
         X = data.drop(columns=['condition'])
-        X['oldpeak'] = X['oldpeak'].apply(lambda x: np.log(1 + x))
+    else:
+        y_true = None
+        X = data
+    X['oldpeak'] = X['oldpeak'].apply(lambda x: np.log(1 + x))
 
+    if model_type == 'GradientBoosting':
+        LOGGER.debug("Prepare dataset for training GradientBoostingClassifier...")
+        return {
+            'labels': y_true,
+            'features': X
+        }
+
+    LOGGER.debug("Prepare dataset for LogisticRegression...")
+    if train:
         column_type_dict = divide_columns_by_type(X)
         for column in column_type_dict['categorical']:
             X = one_hot_encoding_by_column(X, column)
+
         LOGGER.debug(f'Data shape after one hot encoding: {len(X.columns)}')
         mean_columns = {}
         std_columns = {}
@@ -140,29 +154,34 @@ def feature_extraction(data, filename, train=True):
 
         eda_stats = {
             'column_type': column_type_dict,
+            'columns': X.columns,
             'means': mean_columns,
             'stds': std_columns
         }
-
         save_stats(eda_stats, filename)
     else:
         LOGGER.debug("Prepare dataset for inference...")
-        X = data
-        X['oldpeak'] = X['oldpeak'].apply(lambda x: np.log(1 + x))
-        eda_stats = load_stats(filename)
 
+        eda_stats = load_stats(filename)
         column_type_dict = eda_stats['column_type']
         for column in column_type_dict['categorical']:
             X = one_hot_encoding_by_column(X, column)
-        LOGGER.debug(f'Data shape after one hot encoding: {len(X.columns)}')
+        X= X.reindex(columns=eda_stats['columns'], fill_value=0)
 
+        LOGGER.debug(f'Data shape after one hot encoding: {len(X.columns)}')
     for column in column_type_dict['continuous']:
         X[column] = X[column].apply(lambda x: (x - eda_stats['means'][column]) / (eda_stats['stds'][column] + 1e-8))
 
     return {
         'features': X,
-        'labels': None if not train else y_true
+        'labels': y_true
         }
+
+def feature_extraction_with_test_train_split(data, model_type, filename, **kwards):
+    data_train, data_valid = train_test_split(data, **kwards)
+    features_train = feature_extraction(data_train, model_type, filename, train=True)
+    features_valid = feature_extraction(data_valid, model_type, filename, train=False)
+    return features_train, features_valid
 
 
 def get_metrics(y_true, y_pred):

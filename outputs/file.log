@@ -1,24 +1,33 @@
-2022-05-06 21:53:15,503 - INFO - setup_logger - logger set up
-2022-05-06 21:53:15,504 - INFO - load_data - Downloading data from ../data/heart_cleveland_upload.csv
-2022-05-06 21:53:34,466 - INFO - setup_logger - logger set up
-2022-05-06 21:53:34,466 - INFO - load_data - Downloading data from ./data/heart_cleveland_upload.csv
-2022-05-06 21:53:34,504 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ../eda_stats/column_mean_std_stats.sav
-2022-05-06 21:53:54,664 - INFO - setup_logger - logger set up
-2022-05-06 21:53:54,664 - INFO - load_data - Downloading data from ./data/heart_cleveland_upload.csv
-2022-05-06 21:53:54,684 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
-2022-05-06 21:54:34,740 - INFO - setup_logger - logger set up
-2022-05-06 21:54:34,740 - INFO - load_data - Downloading data from ./data/heart_cleveland_upload.csv
-2022-05-06 21:54:34,760 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
-2022-05-06 21:54:50,993 - INFO - setup_logger - logger set up
-2022-05-06 21:54:50,993 - INFO - load_data - Downloading data from ./data/heart_cleveland_upload.csv
-2022-05-06 21:54:51,013 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ../outputs/column_mean_std_stats.sav
-2022-05-06 21:54:51,016 - INFO - __init__ - Creating Logistic regression with C = 10
-2022-05-06 21:54:51,016 - INFO - fit - Fitting model to dataset with feature sizes: 297 x 28 and labels size: 297
-2022-05-06 21:54:51,050 - INFO - predict - Predicting model on dataset with sizes: 297 x 28
-2022-05-06 21:54:51,056 - INFO - main - Metrics evaluation on training data {'accuracy': 0.8653198653198653, 'roc_auc': 0.8618841240875912, 'f1_score': 0.8484848484848484}
-2022-05-06 21:55:36,878 - INFO - setup_logger - logger set up
-2022-05-06 21:55:36,878 - INFO - load_data - Downloading data from ./data/testing.csv
-2022-05-06 21:55:36,881 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ../outputs/column_mean_std_stats.sav
-2022-05-06 21:55:36,898 - INFO - __init__ - Creating Logistic regression with C = 10
-2022-05-06 21:55:36,898 - INFO - predict - Predicting model on dataset with sizes: 297 x 28
-2022-05-06 21:55:36,900 - INFO - save_predictions - Saving predictions with size 297 for inference to ../outputs/results.csv
+2022-05-07 12:11:16,656 - INFO - setup_logger - logger set up
+2022-05-07 12:11:16,656 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-07 12:11:16,659 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 1000, 'random_state': 42}
+2022-05-07 12:11:16,676 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-07 12:11:16,680 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-07 12:11:16,695 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-07 12:11:16,711 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-07 12:11:16,714 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-07 12:11:25,102 - INFO - setup_logger - logger set up
+2022-05-07 12:11:25,102 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-07 12:11:25,104 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-07 12:11:25,108 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 13 and labels size: 237
+2022-05-07 12:11:25,258 - INFO - predict - Predicting model on dataset with sizes: 60 x 13
+2022-05-07 12:11:25,262 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7, 'roc_auc': 0.6986607142857144, 'f1_score': 0.6785714285714286}
+2022-05-07 12:11:32,114 - INFO - setup_logger - logger set up
+2022-05-07 12:11:32,115 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-07 12:11:32,117 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 1000, 'random_state': 42}
+2022-05-07 12:11:32,119 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-07 12:11:32,135 - INFO - predict - Predicting model on dataset with sizes: 297 x 28
+2022-05-07 12:11:32,136 - INFO - save_predictions - Saving predictions with size 297 for inference to ./outputs/prediction.csv
+2022-05-07 12:11:32,138 - INFO - main - Saved predictions to ./outputs/prediction.csv
+2022-05-07 12:11:40,735 - INFO - setup_logger - logger set up
+2022-05-07 12:11:40,735 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-07 12:11:40,738 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-07 12:11:40,742 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-07 12:11:40,744 - INFO - save_predictions - Saving predictions with size 297 for inference to ./outputs/prediction.csv
+2022-05-07 12:11:40,746 - INFO - main - Saved predictions to ./outputs/prediction.csv
+2022-05-07 12:12:02,573 - INFO - setup_logger - logger set up
+2022-05-07 12:12:02,573 - INFO - load_data - Downloading data from ml_project/data/testing.csv
+2022-05-07 12:12:02,575 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-07 12:12:02,579 - INFO - predict - Predicting model on dataset with sizes: 1 x 13
+2022-05-07 12:12:02,580 - INFO - save_predictions - Saving predictions with size 1 for inference to ./outputs/prediction.csv
+2022-05-07 12:12:02,582 - INFO - main - Saved predictions to ./outputs/prediction.csv

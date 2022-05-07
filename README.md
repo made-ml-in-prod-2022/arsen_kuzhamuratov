@@ -2,13 +2,20 @@
 
  Использовался стандартный датасет: https://www.kaggle.com/datasets/cherngs heart-disease-cleveland-uci
 
- ## run training code
+ ## Run training code
  
- `python src/main.py --train -d path/to/training/data.csv`
+Gradient Boosting Classifier:
 
- example: `./data/heart_cleveland_upload.csv`
+ `python ml_project/main.py configs/gradient_boosting.yaml --train -d path/to/training/data.csv`
 
-## run testing code
-`python src/main.py --inference -d path/to/inference/data.csv`
+  Logistic Regression Classifier:
 
-example: `./data/testing.csv`
+`python ml_project/main.py configs/logistic_regression.yaml --train -d path/to/training/data.csv`
+
+## Run testing code
+
+`python ml_project/main.py configs/logistic_regression.yaml --inference -d path/to/training/data.csv`
+
+training data: `./ml_project/data/heart_cleveland_upload.csv`
+
+#to do testing data
