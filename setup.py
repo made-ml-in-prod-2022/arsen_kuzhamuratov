@@ -11,7 +11,8 @@ setup(
         "scikit-learn",
         "pandas",
         "numpy",
-        "matplotlib"
+        "matplotlib",
+        "yaml"
         ],
     license="MIT",
 )
