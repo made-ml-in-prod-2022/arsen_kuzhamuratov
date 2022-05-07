@@ -4,3 +4,4 @@
 *.coverage
 *.pytest_cache
 ml_project.egg-info
+tests/file.sav
