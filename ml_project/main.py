@@ -4,8 +4,9 @@ import logging
 
 import yaml
 
-from utils import setup_logger, LOGGER
-import utils
+from ml_project import utils
+from ml_project.utils import setup_logger, LOGGER
+
 
 
 def main(args):
@@ -16,7 +17,7 @@ def main(args):
     # setup logger
     level = logging.DEBUG if args.debug else logging.INFO
     setup_logger(
-        out_file=f'./outputs/file.log',
+        out_file=args.log_path,
         stdout_level=level,
         file_level=level
         )
@@ -62,6 +63,11 @@ if __name__ == '__main__':
         '--results_path',
         default='./outputs/prediction.csv',
         help='Path to save predictions'
+        )
+    parser.add_argument(
+        '--log_path',
+        default='./outputs/file.log',
+        help='Path to save logs'
         )
     parser.add_argument(
         '--debug', action='store_true'
