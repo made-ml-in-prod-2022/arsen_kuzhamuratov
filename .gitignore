@@ -5,3 +5,4 @@
 *.pytest_cache
 ml_project.egg-info
 tests/file.sav
+file.sav

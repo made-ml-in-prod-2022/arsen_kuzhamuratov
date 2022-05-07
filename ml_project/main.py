@@ -23,11 +23,11 @@ def main(args):
     data = utils.load_data(args.data_path)
     model = utils.ClassificationModel(
         model_config['model'],
-        model_config['model_path'], **model_config['params']
+        **model_config['params']
         )
     # inference or training
     if args.inference:
-        model.load_weights()
+        model.load_weights(model_config['model_path'])
         features = utils.feature_extraction(data, model_config['model'], args.stats_path, args.train)
         y_pred = model.predict(features['features'])
         utils.save_predictions(y_pred, args.results_path)
@@ -40,6 +40,7 @@ def main(args):
             **model_config['train_test_split']
         )
         model.fit(features_train['features'], features_train['labels'])
+        model.save_weights(model_config['model_path'])
         y_pred = model.predict(features_test['features'])
         metrics = utils.get_metrics(features_test['labels'], y_pred)
         LOGGER.info(f'Metrics evaluation on training data {metrics}')

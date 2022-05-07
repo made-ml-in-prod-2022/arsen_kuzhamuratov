@@ -40,12 +40,11 @@ class ClassificationModel:
     Main class for fitting, predicting, saving and
     loading weights of sklearn logistic regression
     """
-    def __init__(self, model_type, filename, **kwards):
+    def __init__(self, model_type, **kwards):
         # add params
         LOGGER.info(f'Creating {model_type} with {kwards}')
         self.clf = (LogisticRegression(**kwards) if model_type == 'LogisticRegression'
                     else GradientBoostingClassifier(**kwards))
-        self.filename = filename
 
     def fit(self, X, y):
         # check x, y
@@ -53,21 +52,20 @@ class ClassificationModel:
             f'Fitting model to dataset with feature sizes: {len(X)} x {len(X.columns)} and labels size: {len(y)}'
             )
         self.clf.fit(X, y)
-        self.save_weights()
 
     def predict(self, X):
         # check input size
         LOGGER.info(f'Predicting model on dataset with sizes: {len(X)} x {len(X.columns)}')
         return self.clf.predict(X)
 
-    def save_weights(self):
-        LOGGER.debug(f'Saving model weights to {self.filename}')
-        with open(self.filename, 'wb') as file:
+    def save_weights(self, filename):
+        LOGGER.debug(f'Saving model weights to {filename}')
+        with open(filename, 'wb') as file:
             pickle.dump(self.clf, file)
 
-    def load_weights(self):
-        LOGGER.debug(f'Downloading model weights to {self.filename}')
-        with open(self.filename, 'rb') as file:
+    def load_weights(self, filename):
+        LOGGER.debug(f'Downloading model weights to {filename}')
+        with open(filename, 'rb') as file:
             self.clf = pickle.load(file)
 
 
