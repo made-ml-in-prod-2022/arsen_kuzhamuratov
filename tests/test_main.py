@@ -48,13 +48,13 @@ def test_inference_grad_boosting(capsys):
 
 TRAINING_NAMESPACE_LOG_REG = argparse.Namespace(
     config_path='./configs/logistic_regression.yaml',
-    data_path='../ml_project/data/heart_cleveland_upload.csv',
+    data_path='./ml_project/data/heart_cleveland_upload.csv',
     train=True,
     debug=True,
     inference=False,
-    stats_path='../outputs/column_mean_std_stats.sav',
-    results_path='../outputs/prediction.csv',
-    log_path='../outputs/file.log',
+    stats_path='./outputs/column_mean_std_stats.sav',
+    results_path='./outputs/prediction.csv',
+    log_path='./outputs/file.log',
     )
 
 def test_train_log_reg(capsys):
@@ -67,13 +67,13 @@ def test_train_log_reg(capsys):
 
 INFERENCE_NAMESPACE_LOG_REG = argparse.Namespace(
     config_path='./configs/logistic_regression.yaml',
-    data_path='../ml_project/data/heart_cleveland_upload.csv',
+    data_path='./ml_project/data/heart_cleveland_upload.csv',
     train=False,
     debug=True,
     inference=True,
-    stats_path='../outputs/column_mean_std_stats.sav',
-    results_path='../outputs/prediction.csv',
-    log_path='../outputs/file.log',
+    stats_path='./outputs/column_mean_std_stats.sav',
+    results_path='./outputs/prediction.csv',
+    log_path='./outputs/file.log',
     )
 
 
@@ -81,4 +81,4 @@ def test_inference_log_reg(capsys):
     res = main(INFERENCE_NAMESPACE_LOG_REG)
     captured = capsys.readouterr()
     assert '' == captured.err
-    assert os.path.exists('../outputs/prediction.csv')
+    assert os.path.exists('./outputs/prediction.csv')
