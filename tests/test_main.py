@@ -47,7 +47,7 @@ def test_inference_grad_boosting(capsys):
 
 
 TRAINING_NAMESPACE_LOG_REG = argparse.Namespace(
-    config_path='../configs/logistic_regression.yaml',
+    config_path='./configs/logistic_regression.yaml',
     data_path='../ml_project/data/heart_cleveland_upload.csv',
     train=True,
     debug=True,
@@ -66,7 +66,7 @@ def test_train_log_reg(capsys):
     assert os.path.exists('./outputs/logistic_regression.pkl')   
 
 INFERENCE_NAMESPACE_LOG_REG = argparse.Namespace(
-    config_path='../configs/logistic_regression.yaml',
+    config_path='./configs/logistic_regression.yaml',
     data_path='../ml_project/data/heart_cleveland_upload.csv',
     train=False,
     debug=True,
