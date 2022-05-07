@@ -12,7 +12,7 @@ setup(
         "pandas",
         "numpy",
         "matplotlib",
-        "yaml"
+        "pyyaml"
         ],
     license="MIT",
 )
