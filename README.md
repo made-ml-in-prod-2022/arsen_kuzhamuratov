@@ -2,7 +2,10 @@
 
  heart-disease-cleveland-uci dataset: https://www.kaggle.com/datasets/cherngs 
 
- ## Run training code
+## Installation
+`python -m pip install -e .`
+
+## Run training code
  
 Gradient Boosting Classifier:
 
