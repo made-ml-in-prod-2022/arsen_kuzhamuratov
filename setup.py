@@ -12,7 +12,7 @@ setup(
         "pandas",
         "numpy",
         "matplotlib",
-        "pyyaml"
+        "hydra"
         ],
     license="MIT",
 )
