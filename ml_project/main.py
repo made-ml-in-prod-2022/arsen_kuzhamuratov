@@ -1,4 +1,3 @@
-import argparse
 import logging
 
 from ml_project.config import ModelCfg
@@ -10,6 +9,7 @@ from ml_project.utils import setup_logger, LOGGER
 
 cs = ConfigStore.instance()
 cs.store(name="model_cfg", node=ModelCfg)
+
 
 @hydra.main(config_path="configs", config_name='grad_boosting')
 def main(cfg: ModelCfg):

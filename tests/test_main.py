@@ -1,18 +1,23 @@
 import argparse
 import os
 from ml_project.main import main
-from ml_project.config import Files, ModelParams, SplittingParams
+from ml_project.config import Files
 
-FILES = Files(model_path='./outputs/gradient_boosting.pkl',
+FILES = Files(
+    model_path='./outputs/gradient_boosting.pkl',
     data_path='./ml_project/data/heart_cleveland_upload.csv',
     stats_path='./outputs/column_mean_std_stats.sav',
     results_path='./outputs/prediction.csv',
     log_path='./outputs/file.log'
     )
-SPLIT_PARAMS = {'shuffle':True, 'test_size':0.2, 'random_state':42}
+SPLIT_PARAMS = {'shuffle': True, 'test_size': 0.2, 'random_state': 42}
 
-GRAD_BOOST_PARAMS = {'n_estimators':100, 'max_depth':10, 'random_state':42}
-LOG_REG_PARAMS = {'C':10, 'penalty': 'l2', 'max_iter':100, 'random_state': 42}
+GRAD_BOOST_PARAMS = {
+    'n_estimators': 100,
+    'max_depth': 10,
+    'random_state': 42
+    }
+LOG_REG_PARAMS = {'C':10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
 
 
 TRAINING_NAMESPACE_GRAD_BOOST = argparse.Namespace(
@@ -23,6 +28,7 @@ TRAINING_NAMESPACE_GRAD_BOOST = argparse.Namespace(
     debug=True,
     files=FILES
 )
+
 
 def test_train_grad_boosting(capsys):
     main(TRAINING_NAMESPACE_GRAD_BOOST)
@@ -42,6 +48,7 @@ INFERENCE_NAMESPACE_GRAD_BOOST = argparse.Namespace(
     debug=True,
     files=FILES
 )
+
 
 def test_inference_grad_boosting(capsys):
     main(INFERENCE_NAMESPACE_GRAD_BOOST)
