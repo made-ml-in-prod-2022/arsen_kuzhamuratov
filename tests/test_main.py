@@ -17,7 +17,7 @@ GRAD_BOOST_PARAMS = {
     'max_depth': 10,
     'random_state': 42
     }
-LOG_REG_PARAMS = {'C':10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+LOG_REG_PARAMS = {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
 
 
 TRAINING_NAMESPACE_GRAD_BOOST = argparse.Namespace(
