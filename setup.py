@@ -12,7 +12,7 @@ setup(
         "pandas",
         "numpy",
         "matplotlib",
-        "hydra"
+        "hydra-core --upgrade"
         ],
     license="MIT",
 )
