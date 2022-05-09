@@ -6,27 +6,28 @@
  
 Gradient Boosting Classifier:
 
- `python ml_project/main.py configs/gradient_boosting.yaml --train -d path/to/training/data.csv`
+ `python ml_project/main.py --config-name grad_boosting files.data_path=path/to/training/data.csv`
 
   Logistic Regression Classifier:
 
-`python ml_project/main.py configs/logistic_regression.yaml --train -d path/to/training/data.csv`
+`python ml_project/main.py --config-name log_reg files.data_path=path/to/training/data.csv`
 
 ## Run testing code
 
-`python ml_project/main.py configs/logistic_regression.yaml --inference -d path/to/inference/data.csv`
+`python ml_project/main.py --config-name log_reg inference=True files.data_path=path/to/training/data.csv`
 
-training data: `./ml_project/data/heart_cleveland_upload.csv`
+default data: `./ml_project/data/heart_cleveland_upload.csv`
 
 inference data can be with/without labels: column "condition"
 
 ## Project Organization
 ```
-├── configs
-│   ├── gradient_boosting.yaml
-│   └── logistic_regression.yaml
 ├── LICENSE
 ├── ml_project
+│   ├── config.py
+│   ├── configs
+│   │   ├── grad_boosting.yaml
+│   │   └── log_reg.yaml
 │   ├── data
 │   │   ├── heart_cleveland_upload.csv
 │   │   └── testing.csv

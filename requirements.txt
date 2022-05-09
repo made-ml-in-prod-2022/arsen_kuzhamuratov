@@ -4,3 +4,4 @@ seaborn
 sklearn
 pandas
 pyyaml
+hydra-core

@@ -893,3 +893,88 @@
 2022-05-09 12:10:42,435 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
 2022-05-09 12:10:42,436 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
 2022-05-09 12:10:42,439 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-09 12:40:17,981 - INFO - setup_logger - logger set up
+2022-05-09 12:40:17,982 - INFO - load_data - Downloading data from /home/arsen/Downloads/arsen_kuzhamuratov/ml_project/data/heart_cleveland_upload.csv
+2022-05-09 12:40:17,984 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-09 12:40:17,985 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-09 12:40:17,986 - DEBUG - load_weights - Downloading model weights to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/gradient_boosting.pkl
+2022-05-09 12:40:17,988 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-09 12:40:17,988 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-09 12:40:47,303 - INFO - setup_logger - logger set up
+2022-05-09 12:40:47,304 - INFO - load_data - Downloading data from /home/arsen/Downloads/arsen_kuzhamuratov/ml_project/data/heart_cleveland_upload.csv
+2022-05-09 12:40:47,306 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-09 12:40:47,306 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-09 12:40:47,310 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-09 12:40:47,311 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-09 12:40:47,311 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 13 and labels size: 237
+2022-05-09 12:40:47,459 - DEBUG - save_weights - Saving model weights to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/gradient_boosting.pkl
+2022-05-09 12:40:47,463 - INFO - predict - Predicting model on dataset with sizes: 60 x 13
+2022-05-09 12:40:47,466 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7, 'roc_auc': 0.6986607142857144, 'f1_score': 0.6785714285714286}
+2022-05-09 12:40:56,763 - INFO - setup_logger - logger set up
+2022-05-09 12:40:56,764 - INFO - load_data - Downloading data from /home/arsen/Downloads/arsen_kuzhamuratov/ml_project/data/heart_cleveland_upload.csv
+2022-05-09 12:40:56,766 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-09 12:40:56,767 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-09 12:40:56,767 - DEBUG - load_weights - Downloading model weights to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/gradient_boosting.pkl
+2022-05-09 12:40:56,772 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-09 12:40:56,773 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-09 12:40:56,776 - INFO - save_predictions - Saving predictions with size 297 for inference to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/prediction.csv
+2022-05-09 12:40:56,778 - INFO - main - Saved predictions to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/prediction.csv
+2022-05-09 12:41:00,971 - INFO - setup_logger - logger set up
+2022-05-09 12:41:00,972 - INFO - load_data - Downloading data from /home/arsen/Downloads/arsen_kuzhamuratov/ml_project/data/heart_cleveland_upload.csv
+2022-05-09 12:41:00,974 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-09 12:41:00,975 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-09 12:41:00,976 - DEBUG - load_weights - Downloading model weights to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/gradient_boosting.pkl
+2022-05-09 12:41:00,982 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-09 12:41:00,982 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-09 12:41:00,985 - INFO - save_predictions - Saving predictions with size 297 for inference to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/prediction.csv
+2022-05-09 12:41:00,988 - INFO - main - Saved predictions to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/prediction.csv
+2022-05-09 12:42:09,742 - INFO - setup_logger - logger set up
+2022-05-09 12:42:09,742 - INFO - load_data - Downloading data from None
+2022-05-09 12:42:27,852 - INFO - setup_logger - logger set up
+2022-05-09 12:42:27,853 - INFO - load_data - Downloading data from /home/arsen/Downloads/arsen_kuzhamuratov/ml_project/data/heart_cleveland_upload.csv
+2022-05-09 12:42:27,855 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-09 12:42:27,855 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-09 12:42:27,856 - DEBUG - load_weights - Downloading model weights to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/gradient_boosting.pkl
+2022-05-09 12:42:27,861 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-09 12:42:27,861 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-09 12:42:27,864 - INFO - save_predictions - Saving predictions with size 297 for inference to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/prediction.csv
+2022-05-09 12:42:27,867 - INFO - main - Saved predictions to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/prediction.csv
+2022-05-09 12:43:08,886 - INFO - setup_logger - logger set up
+2022-05-09 12:43:08,887 - INFO - load_data - Downloading data from /home/arsen/Downloads/arsen_kuzhamuratov/ml_project/data/heart_cleveland_upload.csv
+2022-05-09 12:43:08,889 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-09 12:43:08,890 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-09 12:43:08,893 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-09 12:43:08,894 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-09 12:43:08,894 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 13 and labels size: 237
+2022-05-09 12:43:09,055 - DEBUG - save_weights - Saving model weights to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/gradient_boosting.pkl
+2022-05-09 12:43:09,058 - INFO - predict - Predicting model on dataset with sizes: 60 x 13
+2022-05-09 12:43:09,062 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7, 'roc_auc': 0.6986607142857144, 'f1_score': 0.6785714285714286}
+2022-05-09 12:43:36,264 - INFO - setup_logger - logger set up
+2022-05-09 12:43:36,264 - INFO - load_data - Downloading data from /home/arsen/Downloads/arsen_kuzhamuratov/ml_project/data/heart_cleveland_upload.csv
+2022-05-09 12:43:36,266 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-09 12:43:36,266 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 1000, 'random_state': 42}
+2022-05-09 12:43:36,269 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-09 12:43:36,270 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-09 12:43:36,271 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-09 12:43:36,283 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-09 12:43:36,284 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/column_mean_std_stats.sav
+2022-05-09 12:43:36,288 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-09 12:43:36,288 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-09 12:43:36,288 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from /home/arsen/Downloads/arsen_kuzhamuratov/outputs/column_mean_std_stats.sav
+2022-05-09 12:43:36,302 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-09 12:43:36,304 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-09 12:43:36,321 - DEBUG - save_weights - Saving model weights to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/logistic_regression.pkl
+2022-05-09 12:43:36,321 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-09 12:43:36,325 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-09 12:44:28,742 - INFO - setup_logger - logger set up
+2022-05-09 12:44:28,742 - INFO - load_data - Downloading data from /home/arsen/Downloads/arsen_kuzhamuratov/ml_project/data/heart_cleveland_upload.csv
+2022-05-09 12:44:28,745 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-09 12:44:28,745 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 1000, 'random_state': 42}
+2022-05-09 12:44:28,747 - DEBUG - load_weights - Downloading model weights to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/logistic_regression.pkl
+2022-05-09 12:44:28,749 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-09 12:44:28,750 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-09 12:44:28,750 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from /home/arsen/Downloads/arsen_kuzhamuratov/outputs/column_mean_std_stats.sav
+2022-05-09 12:44:28,764 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-09 12:44:28,767 - INFO - predict - Predicting model on dataset with sizes: 297 x 28
+2022-05-09 12:44:28,770 - INFO - save_predictions - Saving predictions with size 297 for inference to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/prediction.csv
+2022-05-09 12:44:28,772 - INFO - main - Saved predictions to /home/arsen/Downloads/arsen_kuzhamuratov/outputs/prediction.csv
