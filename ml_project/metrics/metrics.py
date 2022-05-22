@@ -10,7 +10,7 @@ from sklearn.metrics import (
 
 
 def get_metrics(
-    y_true: Union[pd.DataFrame, list, np.array], 
+    y_true: Union[pd.DataFrame, list, np.array],
     y_pred: Union[pd.DataFrame, list, np.array]
     ) -> Dict[str, float]:
     """

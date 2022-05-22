@@ -1,6 +1,4 @@
-import logging
-import sys
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Dict, List, Tuple, Union
 
 
 import pickle
@@ -29,7 +27,7 @@ def one_hot_encoding_by_column(data: pd.DataFrame, column: str) -> pd.DataFrame:
 
 def divide_columns_by_type(data: pd.DataFrame, threshold: int = 10) -> Dict[str, List[str]]:
     """
-    Divide columns into categorical and continuous 
+    Divide columns into categorical and continuous
     by threshold of unique values in column
     :param data: input data
     :param threshold: threshold of unique values in column

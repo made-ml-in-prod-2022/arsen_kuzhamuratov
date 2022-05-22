@@ -1,10 +1,9 @@
 import logging
 import sys
-from typing import Dict, List, Optional, Tuple, Union
+from typing import Optional
 
 
 import pandas as pd
-import numpy as np
 
 
 LOGGER = logging.getLogger()
@@ -12,11 +11,11 @@ FORMATTER = logging.Formatter("%(asctime)s - %(levelname)s - %(funcName)s - %(me
 
 
 def setup_logger(
-    out_file: Optional[str] =None,
-     stdout: bool=True,
-      stdout_level: int=logging.INFO,
-       file_level: int=logging.DEBUG
-       ) -> logging.RootLogger:
+    out_file: Optional[str] = None,
+    stdout: bool = True,
+    stdout_level: int = logging.INFO,
+    file_level: int = logging.DEBUG
+    ) -> logging.RootLogger:
     """
     Setup logger
     :param out_file: filepath to *.log file
