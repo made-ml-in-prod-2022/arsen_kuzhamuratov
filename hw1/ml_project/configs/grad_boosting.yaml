@@ -10,8 +10,8 @@ train_test_split:
 inference: False
 debug: True
 files:
-    model_path: '${hydra:runtime.cwd}/outputs/gradient_boosting.pkl'
-    data_path: '${hydra:runtime.cwd}/ml_project/data/heart_cleveland_upload.csv'
-    stats_path: '${hydra:runtime.cwd}/outputs/column_mean_std_stats.sav'
-    results_path: '${hydra:runtime.cwd}/outputs/prediction.csv'
-    log_path: '${hydra:runtime.cwd}/outputs/file.log'
+    model_path: '${hydra:runtime.cwd}/hw1/outputs/gradient_boosting.pkl'
+    data_path: '${hydra:runtime.cwd}/hw1/ml_project/data/heart_cleveland_upload.csv'
+    stats_path: '${hydra:runtime.cwd}/hw1/outputs/column_mean_std_stats.sav'
+    results_path: '${hydra:runtime.cwd}/hw1/outputs/prediction.csv'
+    log_path: '${hydra:runtime.cwd}/hw1/outputs/file.log'
