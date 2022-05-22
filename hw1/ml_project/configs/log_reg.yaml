@@ -1,0 +1,20 @@
+model: LogisticRegression
+params:
+    C: 10
+    penalty: 'l2'
+    max_iter: 1000
+    random_state: 42
+train_test_split:
+    shuffle: True
+    test_size: 0.2
+    random_state: 42
+inference: False
+debug: True
+files:
+    model_path: '${hydra:runtime.cwd}/outputs/logistic_regression.pkl'
+    data_path: '${hydra:runtime.cwd}/ml_project/data/heart_cleveland_upload.csv'
+    stats_path: '${hydra:runtime.cwd}/outputs/column_mean_std_stats.sav'
+    results_path: '${hydra:runtime.cwd}/outputs/prediction.csv'
+    log_path: '${hydra:runtime.cwd}/outputs/file.log'
+
+

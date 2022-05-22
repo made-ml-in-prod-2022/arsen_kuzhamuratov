@@ -1,0 +1,11 @@
+*.ipynb_checkpoints
+*__pycache__
+.vscode
+*.coverage
+*.pytest_cache
+ml_project.egg-info
+tests/file.sav
+file.sav
+*2022-05*/
+build/
+dist/
