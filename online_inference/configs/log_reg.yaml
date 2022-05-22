@@ -1,0 +1,7 @@
+model: LogisticRegression
+files:
+    model_path: '${hydra:runtime.cwd}/outputs/logistic_regression.pkl'
+    data_path: '${hydra:runtime.cwd}/ml_project/data/heart_cleveland_upload.csv'
+    stats_path: '${hydra:runtime.cwd}/outputs/column_mean_std_stats.sav'
+
+
