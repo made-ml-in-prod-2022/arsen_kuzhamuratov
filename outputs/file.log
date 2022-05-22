@@ -1219,3 +1219,320 @@
 2022-05-22 10:34:25,421 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
 2022-05-22 10:34:25,421 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
 2022-05-22 10:34:25,424 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-22 10:46:46,569 - INFO - setup_logger - logger set up
+2022-05-22 10:46:46,653 - INFO - setup_logger - logger set up
+2022-05-22 10:46:46,658 - INFO - setup_logger - logger set up
+2022-05-22 10:46:46,663 - INFO - setup_logger - logger set up
+2022-05-22 10:48:38,120 - INFO - setup_logger - logger set up
+2022-05-22 10:48:38,120 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:48:38,122 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:48:38,122 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 10:48:38,196 - INFO - setup_logger - logger set up
+2022-05-22 10:48:38,196 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:48:38,198 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:48:38,198 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 10:48:38,198 - DEBUG - load_weights - Downloading model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 10:48:38,203 - INFO - setup_logger - logger set up
+2022-05-22 10:48:38,203 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:48:38,205 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:48:38,205 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 10:48:38,235 - INFO - setup_logger - logger set up
+2022-05-22 10:48:38,235 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:48:38,236 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:48:38,236 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 10:49:37,413 - INFO - setup_logger - logger set up
+2022-05-22 10:49:37,413 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:49:37,415 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:49:37,415 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 10:49:37,487 - INFO - setup_logger - logger set up
+2022-05-22 10:49:37,487 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:49:37,489 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:49:37,489 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 10:49:37,489 - DEBUG - load_weights - Downloading model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 10:49:37,493 - INFO - setup_logger - logger set up
+2022-05-22 10:49:37,493 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:49:37,495 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:49:37,495 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 10:49:37,523 - INFO - setup_logger - logger set up
+2022-05-22 10:49:37,523 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:49:37,525 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:49:37,525 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 10:55:24,148 - INFO - setup_logger - logger set up
+2022-05-22 10:55:24,148 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:55:24,150 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:55:24,150 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 10:55:24,223 - INFO - setup_logger - logger set up
+2022-05-22 10:55:24,223 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:55:24,224 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:55:24,225 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 10:55:24,225 - DEBUG - load_weights - Downloading model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 10:55:24,229 - INFO - setup_logger - logger set up
+2022-05-22 10:55:24,229 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:55:24,230 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:55:24,230 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 10:55:24,235 - INFO - setup_logger - logger set up
+2022-05-22 10:55:24,235 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:55:24,237 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:55:24,237 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 10:56:16,730 - INFO - setup_logger - logger set up
+2022-05-22 10:56:16,730 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:56:16,732 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:56:16,732 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 10:56:16,734 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 10:56:16,734 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 10:56:16,735 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 13 and labels size: 237
+2022-05-22 10:56:16,865 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 10:56:16,867 - INFO - predict - Predicting model on dataset with sizes: 60 x 13
+2022-05-22 10:56:16,871 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7, 'roc_auc': 0.6986607142857144, 'f1_score': 0.6785714285714286}
+2022-05-22 10:56:16,872 - INFO - setup_logger - logger set up
+2022-05-22 10:56:16,872 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:56:16,874 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:56:16,874 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 10:56:16,874 - DEBUG - load_weights - Downloading model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 10:56:16,877 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 10:56:16,878 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-22 10:56:16,879 - INFO - save_predictions - Saving predictions with size 297 for inference to ./outputs/prediction.csv
+2022-05-22 10:56:16,880 - INFO - main - Saved predictions to ./outputs/prediction.csv
+2022-05-22 10:56:16,881 - INFO - setup_logger - logger set up
+2022-05-22 10:56:16,881 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:56:16,883 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:56:16,883 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 10:56:16,884 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 10:56:16,884 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 10:56:16,885 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 10:56:16,896 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 10:56:16,897 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 10:56:16,900 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 10:56:16,900 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 10:56:16,900 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 10:56:16,911 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 10:56:16,913 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 10:56:16,925 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 10:56:16,925 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 10:56:16,927 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-22 10:56:16,929 - INFO - setup_logger - logger set up
+2022-05-22 10:56:16,929 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 10:56:16,931 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 10:56:16,931 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 10:56:16,932 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 10:56:16,932 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 10:56:16,933 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 10:56:16,943 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 10:56:16,944 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 10:56:16,947 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 10:56:16,947 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 10:56:16,947 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 10:56:16,957 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 10:56:16,958 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 10:56:16,970 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 10:56:16,970 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 10:56:16,973 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-22 11:43:03,546 - INFO - setup_logger - logger set up
+2022-05-22 11:43:03,546 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:43:03,548 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:43:03,548 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 11:43:03,550 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:43:03,551 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:43:03,551 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 13 and labels size: 237
+2022-05-22 11:43:03,680 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:43:03,683 - INFO - predict - Predicting model on dataset with sizes: 60 x 13
+2022-05-22 11:43:03,755 - INFO - setup_logger - logger set up
+2022-05-22 11:43:03,755 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:43:03,757 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:43:03,757 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 11:43:03,757 - DEBUG - load_weights - Downloading model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:43:03,761 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:43:03,761 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-22 11:43:03,762 - INFO - save_predictions - Saving predictions with size 297 for inference to ./outputs/prediction.csv
+2022-05-22 11:43:03,763 - INFO - main - Saved predictions to ./outputs/prediction.csv
+2022-05-22 11:43:03,765 - INFO - setup_logger - logger set up
+2022-05-22 11:43:03,765 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:43:03,766 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:43:03,766 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 11:43:03,768 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:43:03,768 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 11:43:03,768 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 11:43:03,778 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:43:03,779 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 11:43:03,782 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:43:03,782 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 11:43:03,782 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 11:43:03,792 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:43:03,794 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 11:43:03,805 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:43:03,806 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 11:43:03,812 - INFO - setup_logger - logger set up
+2022-05-22 11:43:03,812 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:43:03,813 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:43:03,813 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 11:43:03,815 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:43:03,815 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 11:43:03,816 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 11:43:03,825 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:43:03,826 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 11:43:03,829 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:43:03,829 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 11:43:03,829 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 11:43:03,839 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:43:03,841 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 11:43:03,852 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:43:03,852 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 11:43:50,925 - INFO - setup_logger - logger set up
+2022-05-22 11:43:50,925 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:43:50,927 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:43:50,927 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 11:43:50,929 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:43:50,930 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:43:50,930 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 13 and labels size: 237
+2022-05-22 11:43:51,061 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:43:51,064 - INFO - predict - Predicting model on dataset with sizes: 60 x 13
+2022-05-22 11:43:51,067 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7, 'roc_auc': 0.6986607142857144, 'f1_score': 0.6785714285714286}
+2022-05-22 11:43:51,068 - INFO - setup_logger - logger set up
+2022-05-22 11:43:51,068 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:43:51,069 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:43:51,069 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 11:43:51,070 - DEBUG - load_weights - Downloading model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:43:51,073 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:43:51,073 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-22 11:43:51,075 - INFO - save_predictions - Saving predictions with size 297 for inference to ./outputs/prediction.csv
+2022-05-22 11:43:51,076 - INFO - main - Saved predictions to ./outputs/prediction.csv
+2022-05-22 11:43:51,077 - INFO - setup_logger - logger set up
+2022-05-22 11:43:51,077 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:43:51,079 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:43:51,079 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 11:43:51,081 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:43:51,081 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 11:43:51,082 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 11:43:51,091 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:43:51,093 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 11:43:51,096 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:43:51,096 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 11:43:51,096 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 11:43:51,107 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:43:51,109 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 11:43:51,121 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:43:51,122 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 11:43:51,124 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-22 11:43:51,126 - INFO - setup_logger - logger set up
+2022-05-22 11:43:51,126 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:43:51,127 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:43:51,127 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 11:43:51,129 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:43:51,129 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 11:43:51,130 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 11:43:51,139 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:43:51,140 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 11:43:51,143 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:43:51,143 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 11:43:51,143 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 11:43:51,153 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:43:51,155 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 11:43:51,166 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:43:51,167 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 11:43:51,169 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-22 11:45:07,240 - INFO - setup_logger - logger set up
+2022-05-22 11:45:07,241 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:45:07,243 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:45:07,243 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 11:45:07,244 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:45:07,245 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:45:07,245 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 13 and labels size: 237
+2022-05-22 11:45:07,382 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:45:07,384 - INFO - predict - Predicting model on dataset with sizes: 60 x 13
+2022-05-22 11:45:07,387 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7, 'roc_auc': 0.6986607142857144, 'f1_score': 0.6785714285714286}
+2022-05-22 11:45:07,389 - INFO - setup_logger - logger set up
+2022-05-22 11:45:07,389 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:45:07,390 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:45:07,390 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 11:45:07,391 - DEBUG - load_weights - Downloading model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:45:07,394 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:45:07,394 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-22 11:45:07,396 - INFO - save_predictions - Saving predictions with size 297 for inference to ./outputs/prediction.csv
+2022-05-22 11:45:07,397 - INFO - main - Saved predictions to ./outputs/prediction.csv
+2022-05-22 11:45:07,398 - INFO - setup_logger - logger set up
+2022-05-22 11:45:07,398 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:45:07,400 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:45:07,400 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 11:45:07,401 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:45:07,402 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 11:45:07,402 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 11:45:07,413 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:45:07,414 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 11:45:07,417 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:45:07,417 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 11:45:07,417 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 11:45:07,427 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:45:07,429 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 11:45:07,441 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:45:07,442 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 11:45:07,444 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-22 11:45:07,446 - INFO - setup_logger - logger set up
+2022-05-22 11:45:07,446 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:45:07,447 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:45:07,447 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 11:45:07,449 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:45:07,449 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 11:45:07,450 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 11:45:07,460 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:45:07,461 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 11:45:07,464 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:45:07,464 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 11:45:07,464 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 11:45:07,475 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:45:07,476 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 11:45:07,489 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:45:07,490 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 11:45:07,492 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-22 11:48:43,120 - INFO - setup_logger - logger set up
+2022-05-22 11:48:43,121 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:48:43,122 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:48:43,123 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 11:48:43,124 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:48:43,125 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:48:43,125 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 13 and labels size: 237
+2022-05-22 11:48:43,249 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:48:43,252 - INFO - predict - Predicting model on dataset with sizes: 60 x 13
+2022-05-22 11:48:43,254 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7, 'roc_auc': 0.6986607142857144, 'f1_score': 0.6785714285714286}
+2022-05-22 11:48:43,256 - INFO - setup_logger - logger set up
+2022-05-22 11:48:43,256 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:48:43,257 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:48:43,257 - INFO - __init__ - Creating GradientBoosting with {'n_estimators': 100, 'max_depth': 10, 'random_state': 42}
+2022-05-22 11:48:43,257 - DEBUG - load_weights - Downloading model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:48:43,261 - DEBUG - feature_extraction - Prepare dataset for training GradientBoostingClassifier...
+2022-05-22 11:48:43,261 - INFO - predict - Predicting model on dataset with sizes: 297 x 13
+2022-05-22 11:48:43,262 - INFO - save_predictions - Saving predictions with size 297 for inference to ./outputs/prediction.csv
+2022-05-22 11:48:43,263 - INFO - main - Saved predictions to ./outputs/prediction.csv
+2022-05-22 11:48:43,265 - INFO - setup_logger - logger set up
+2022-05-22 11:48:43,265 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:48:43,266 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:48:43,266 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 11:48:43,268 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:48:43,268 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 11:48:43,268 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 11:48:43,278 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:48:43,279 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 11:48:43,282 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:48:43,282 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 11:48:43,282 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 11:48:43,292 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:48:43,294 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 11:48:43,306 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:48:43,306 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 11:48:43,309 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}
+2022-05-22 11:48:43,310 - INFO - setup_logger - logger set up
+2022-05-22 11:48:43,310 - INFO - load_data - Downloading data from ./ml_project/data/heart_cleveland_upload.csv
+2022-05-22 11:48:43,311 - DEBUG - load_data - Table data has length: 297 and number of columns: 14
+2022-05-22 11:48:43,311 - INFO - __init__ - Creating LogisticRegression with {'C': 10, 'penalty': 'l2', 'max_iter': 100, 'random_state': 42}
+2022-05-22 11:48:43,313 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:48:43,313 - DEBUG - divide_columns_by_type - Dividing columns into categorical and continuous groups by 10
+2022-05-22 11:48:43,314 - DEBUG - divide_columns_by_type - Categorical columns: ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']; Continuous columns: ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+2022-05-22 11:48:43,323 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:48:43,324 - INFO - save_stats - Saving split into categorical and continuous groups and statistics: means and stds to ./outputs/column_mean_std_stats.sav
+2022-05-22 11:48:43,327 - DEBUG - feature_extraction - Prepare dataset for LogisticRegression...
+2022-05-22 11:48:43,327 - DEBUG - feature_extraction - Prepare dataset for inference...
+2022-05-22 11:48:43,327 - INFO - load_stats - Loading split into categorical and continuous groups and statistics from ./outputs/column_mean_std_stats.sav
+2022-05-22 11:48:43,337 - DEBUG - feature_extraction - Data shape after one hot encoding: 28
+2022-05-22 11:48:43,339 - INFO - fit - Fitting model to dataset with feature sizes: 237 x 28 and labels size: 237
+2022-05-22 11:48:43,350 - DEBUG - save_weights - Saving model weights to ./outputs/gradient_boosting.pkl
+2022-05-22 11:48:43,351 - INFO - predict - Predicting model on dataset with sizes: 60 x 28
+2022-05-22 11:48:43,353 - INFO - main - Metrics evaluation on training data {'accuracy': 0.7833333333333333, 'roc_auc': 0.7834821428571428, 'f1_score': 0.7719298245614034}

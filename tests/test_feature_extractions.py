@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 
-from ml_project import utils
+from ml_project.feature_extraction import feature_extraction
 
 FILENAME = './file.sav'
 
@@ -32,19 +32,19 @@ VALID_SINGLE_LINE = pd.DataFrame.from_dict({
 
 
 def test_divide_columns_by_type():
-    result = utils.divide_columns_by_type(FAKE_DATA_SMALL, threshold=10)
+    result = feature_extraction.divide_columns_by_type(FAKE_DATA_SMALL, threshold=10)
     assert ['a1', 'a2', 'a4'] == result['categorical']
     assert ['a3'] == result['continuous']
 
 
 def test_divide_columns_by_type_mid_dataset():
-    result = utils.divide_columns_by_type(FAKE_DATA_MID, threshold=10)
+    result = feature_extraction.divide_columns_by_type(FAKE_DATA_MID, threshold=10)
     assert 11 == len(result['categorical'])
     assert 3 == len(result['continuous'])
 
 
 def test_train_feature_extraction_grad_boosting():
-    features = utils.feature_extraction(
+    features = feature_extraction.feature_extraction(
         data=FAKE_DATA_MID,
         model_type='GradientBoosting',
         filename=FILENAME,
@@ -54,7 +54,7 @@ def test_train_feature_extraction_grad_boosting():
 
 
 def test_train_feature_extraction_log_reg():
-    features = utils.feature_extraction(
+    features = feature_extraction.feature_extraction(
         data=FAKE_DATA_MID,
         model_type='LogisticRegression',
         filename=FILENAME,
@@ -64,7 +64,7 @@ def test_train_feature_extraction_log_reg():
 
 
 def test_valid_feature_extraction_log_reg():
-    features = utils.feature_extraction(
+    features = feature_extraction.feature_extraction(
         data=FAKE_DATA_MID,
         model_type='LogisticRegression',
         filename=FILENAME,
@@ -74,7 +74,7 @@ def test_valid_feature_extraction_log_reg():
 
 
 def test_valid_feature_extraction_log_reg_single_line_input():
-    features = utils.feature_extraction(
+    features = feature_extraction.feature_extraction(
         data=VALID_SINGLE_LINE,
         model_type='LogisticRegression',
         filename=FILENAME,

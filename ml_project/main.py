@@ -4,6 +4,9 @@ import hydra
 from hydra.core.config_store import ConfigStore
 
 from ml_project import utils
+from ml_project.feature_extraction import feature_extraction
+from ml_project.model import models
+from ml_project.metrics import metrics
 from ml_project.config import ModelCfg
 from ml_project.utils import setup_logger, LOGGER
 
@@ -22,19 +25,19 @@ def main(cfg: ModelCfg) -> None:
         )
     # loading data and creating model
     data = utils.load_data(cfg.files.data_path)
-    model = utils.ClassificationModel(
+    model = models.ClassificationModel(
         cfg.model,
         **cfg.params
         )
     # inference or training
     if cfg.inference:
         model.load_weights(cfg.files.model_path)
-        features = utils.feature_extraction(data, cfg.model, cfg.files.stats_path, train=False)
+        features = feature_extraction.feature_extraction(data, cfg.model, cfg.files.stats_path, train=False)
         y_pred = model.predict(features['features'])
         utils.save_predictions(y_pred, cfg.files.results_path)
         LOGGER.info(f'Saved predictions to {cfg.files.results_path}')
     else:
-        features_train, features_test = utils.feature_extraction_with_test_train_split(
+        features_train, features_test = feature_extraction.feature_extraction_with_test_train_split(
             data,
             cfg.model,
             cfg.files.stats_path,
@@ -43,8 +46,8 @@ def main(cfg: ModelCfg) -> None:
         model.fit(features_train['features'], features_train['labels'])
         model.save_weights(cfg.files.model_path)
         y_pred = model.predict(features_test['features'])
-        metrics = utils.get_metrics(features_test['labels'], y_pred)
-        LOGGER.info(f'Metrics evaluation on training data {metrics}')
+        model_metrics = metrics.get_metrics(features_test['labels'], y_pred)
+        LOGGER.info(f'Metrics evaluation on training data {model_metrics}')
 
 
 if __name__ == '__main__':
