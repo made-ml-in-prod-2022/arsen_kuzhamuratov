@@ -1,0 +1,2 @@
+2022-05-22 09:53:55,939 - INFO - setup_logger - logger set up
+2022-05-22 09:53:55,940 - INFO - load_data - Downloading data from /home/arsen/Arsen/MADE-DS21/arsen_kuzhamuratov/ml_project/ml_project/data/heart_cleveland_upload.csv
