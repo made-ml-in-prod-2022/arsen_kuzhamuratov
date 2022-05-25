@@ -1,7 +1,9 @@
+import os
 from typing import Dict
 
 
 import yaml
+import uvicorn
 from fastapi import FastAPI
 
 
@@ -10,7 +12,8 @@ from online_inference.model.models import ClassificationModel
 from online_inference.feature_extraction.feature_extraction import load_stats
 from online_inference.model.predict import get_predict
 
-LOGREG_MODEL_PATH = '../configs/log_reg.yaml'
+CONFIG_PATH = ''
+DEFAULT_CONFIG_PATH = './configs/log_reg.yaml'
 app = FastAPI()
 artifacts = {}
 
@@ -25,8 +28,9 @@ async def startup_event() -> None:
     """
     Prepare artifacts: loading model and eda_stats
     """
+    model_config = os.getenv(CONFIG_PATH) or DEFAULT_CONFIG_PATH
     config = ModelCfg(
-        **yaml.safe_load(open(LOGREG_MODEL_PATH))
+        **yaml.safe_load(open(model_config))
     )
     artifacts['model_name'] = config.model_type
     artifacts['model_state'] = ClassificationModel(config.pathes['model_path'])
@@ -52,3 +56,11 @@ async def check_ready() -> bool:
     :return: status
     """
     return len(artifacts) == 3
+
+
+def run() -> None:
+    uvicorn.run("app:app", host='0.0.0.0', port=8000)
+
+
+if __name__ == "__main__":
+    run()

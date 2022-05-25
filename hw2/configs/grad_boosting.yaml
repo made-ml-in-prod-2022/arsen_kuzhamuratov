@@ -1,4 +1,4 @@
 model_type: GradientBoosting
 pathes:
-    model_path: '../artifacts/gradient_boosting.pkl'
+    model_path: './artifacts/gradient_boosting.pkl'
     stats_path: null

@@ -17,7 +17,7 @@ def load_data(path: str) -> pd.DataFrame:
 @click.command()
 @click.option("--data_path", default='./data/heart_cleveland_upload.csv')
 @click.option("--batch_size", default=10)
-@click.option("--host", default='http://127.0.0.1:8000/predict')
+@click.option("--host", default='http://0.0.0.0:8000/predict')
 def requester(data_path: str, batch_size: int, host: str) -> None:
     data = load_data(data_path)
     for i in range(0, len(data), batch_size):
@@ -32,7 +32,6 @@ def requester(data_path: str, batch_size: int, host: str) -> None:
             response.content
             )
             )
-        break
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
 model_type: LogisticRegression
 pathes:
-    model_path: '../artifacts/gradient_boosting.pkl'
-    stats_path: '../artifacts/column_mean_std_stats.sav'
+    model_path: './artifacts/gradient_boosting.pkl'
+    stats_path: './artifacts/column_mean_std_stats.sav'
