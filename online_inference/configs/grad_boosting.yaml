@@ -1,5 +1,0 @@
-model: GradientBoosting
-files:
-    model_path: '${hydra:runtime.cwd}/outputs/gradient_boosting.pkl'
-    data_path: '${hydra:runtime.cwd}/ml_project/data/heart_cleveland_upload.csv'
-    stats_path: null

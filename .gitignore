@@ -3,7 +3,7 @@
 *.vscode
 *.coverage
 *.pytest_cache
-*ml_project.egg-info
+*.egg-info
 *file.sav
 *2022-05*/
 *build/

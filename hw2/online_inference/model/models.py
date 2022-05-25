@@ -4,8 +4,6 @@ from typing import Union
 
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import GradientBoostingClassifier
 
 
 class ClassificationModel:
@@ -15,7 +13,7 @@ class ClassificationModel:
     """
     def __init__(self, filepath) -> None:
         """
-        Initializing model with params
+        Initializing model
         :param filepath: path to trained model
         """
         self.filepath = filepath

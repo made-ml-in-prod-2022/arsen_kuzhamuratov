@@ -66,7 +66,7 @@ def cast_json_to_dataframe(X: JSON_TYPE) -> pd.DataFrame:
 def feature_extraction(
     X: Union[pd.DataFrame, JSON_TYPE],
     model_type: str,
-    filename: Union[str, None] = None
+    eda_stats: Union[dict, None] = None
     ) -> Union[pd.DataFrame, np.array]:
     """
     Extraction features for inference
@@ -85,7 +85,6 @@ def feature_extraction(
     if model_type == 'GradientBoosting':
         return X
     elif model_type == 'LogisticRegression':
-        eda_stats = load_stats(filename)
         column_type_dict = eda_stats['column_type']
         for column in column_type_dict['categorical']:
             X = one_hot_encoding_by_column(X, column)
