@@ -12,6 +12,7 @@ LOG_SCALE_COLUMN = 'oldpeak'
 SCALAR = Union[float, int]
 JSON_TYPE = Dict[str, Union[SCALAR, List[SCALAR]]]
 
+
 def one_hot_encoding_by_column(data: pd.DataFrame, column: str) -> pd.DataFrame:
     """
     Encode categorical data in column using pd.get_dummies
@@ -62,6 +63,7 @@ def cast_json_to_dataframe(X: JSON_TYPE) -> pd.DataFrame:
         if not isinstance(value, list):
             X[key] = [value]
     return pd.DataFrame.from_dict(X)
+
 
 def feature_extraction(
     X: Union[pd.DataFrame, JSON_TYPE],

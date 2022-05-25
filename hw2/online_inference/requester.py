@@ -3,10 +3,6 @@ import click
 import pandas as pd
 import requests
 
-from online_inference.feature_extraction.feature_extraction import (
-    load_stats
-)
-
 
 def load_data(path: str) -> pd.DataFrame:
     """
@@ -16,6 +12,7 @@ def load_data(path: str) -> pd.DataFrame:
     """
     data = pd.read_csv(path)
     return data
+
 
 @click.command()
 @click.option("--data_path", default='./data/heart_cleveland_upload.csv')
@@ -36,9 +33,6 @@ def requester(data_path: str, batch_size: int, host: str) -> None:
             )
             )
         break
-
-
-
 
 
 if __name__ == '__main__':

@@ -12,13 +12,13 @@ CHECK_INSTANCE = {column: [0] for column in REAL_COLUMNS}
 
 BATCH_INSTANCE = {column: [0, 1, 2, 3, 4] for column in REAL_COLUMNS}
 
+
 def test_startup():
     with TestClient(app) as client:
         response = client.get('/')
     assert 200 == response.status_code
 
 
-artifacts = {'model_name': 1, 'model_state': 2, 'feature_extraction_stats': 3}
 def test_health():
     with TestClient(app) as client:
         response = client.get('/health')
@@ -33,7 +33,8 @@ def test_predict_single():
     assert 1 == len(response.json())
     assert response.json()['Id0'] in [0, 1]
 
-def test_predict_single():
+
+def test_predict_batch():
     with TestClient(app) as client:
         response = client.get('/predict', json={'data': BATCH_INSTANCE})
     assert 200 == response.status_code
