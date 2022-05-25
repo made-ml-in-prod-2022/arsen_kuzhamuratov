@@ -13,7 +13,7 @@ from online_inference.feature_extraction.feature_extraction import load_stats
 from online_inference.model.predict import get_predict
 
 CONFIG_PATH = ''
-DEFAULT_CONFIG_PATH = './configs/log_reg.yaml'
+DEFAULT_CONFIG_PATH = '../configs/log_reg.yaml'
 app = FastAPI()
 artifacts = {}
 
