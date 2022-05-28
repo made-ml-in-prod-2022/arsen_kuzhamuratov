@@ -19,5 +19,5 @@ docker run -it -p 8000:8000 online_inference:v1
 Загрузка образа из docker.hub:
 ```
 docker pull kuzhamuratov/online_inference:v1
-sudo docker pull kuzhamuratov/online_inference:v1
+docker run -it -p 8000:8000 kuzhamuratov/online_inference:v1
 ```

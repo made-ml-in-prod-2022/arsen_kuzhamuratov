@@ -1,0 +1,6 @@
+./data
+./README.md
+*.pytest_cache/
+*__pycache__/
+*tests/
+online_inference/requester.py
