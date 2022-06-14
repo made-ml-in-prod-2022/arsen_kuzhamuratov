@@ -11,6 +11,7 @@ x-environment: &airflow_environment
   - AIRFLOW_VAR_MODEL_NAME=${MODEL_NAME}
   - AIRFLOW_CONN_DOCKER=${CONN_TYPE}
   - AIRFLOW__CORE__FERNET_KEY=${FERNET_KEY}
+  - AIRFLOW_VAR_MODELPATH=/data/models/2022-06-14
 
 x-airflow-image: &airflow_image apache/airflow:2.3.0-python3.8
 # ====================================== /AIRFLOW ENVIRONMENT VARIABLES ======================================
