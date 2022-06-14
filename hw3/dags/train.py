@@ -2,12 +2,13 @@ from datetime import timedelta
 
 from airflow import DAG
 from airflow.providers.docker.operators.docker import DockerOperator
-from airflow.sensors.filesystem import FileSensor
 from airflow.utils.dates import days_ago
 from docker.types import Mount
 
+
 SAVE_DIR_GENERATE = "/data/raw/{{ ds }}"
 SAVE_DIR_PROCESSED = "/data/processed/{{ ds }}"
+MODEL_SAVE_DIR = "/data/models/{{ ds }}"
 MOUNT_SOURCE = Mount(
     source="/home/arsen/Arsen/MADE-DS21/arsen_kuzhamuratov/hw3/data",
     target="/data",
@@ -40,7 +41,7 @@ with DAG(
 
     split_data = DockerOperator(
         image="airflow-data-split",
-        command="--in_dir {} --out_dir {}".format(SAVE_DIR_PROCESSED, SAVE_DIR_PROCESSED),
+        command="--in_dir {}".format(SAVE_DIR_PROCESSED),
         task_id="docker-airflow-split",
         do_xcom_push=False,
         network_mode="bridge",
@@ -49,7 +50,7 @@ with DAG(
 
     train_model = DockerOperator(
         image="airflow-model-train",
-        command="--in_dir {} --out_dir {}".format(SAVE_DIR_PROCESSED, SAVE_DIR_PROCESSED),
+        command="--in_dir {} --out_dir {}".format(SAVE_DIR_PROCESSED, MODEL_SAVE_DIR),
         task_id="docker-airflow-train",
         do_xcom_push=False,
         network_mode="bridge",
@@ -58,7 +59,7 @@ with DAG(
 
     val_model = DockerOperator(
         image="airflow-model-validate",
-        command="--model_dir {} --data_dir {} --metric_dir {}".format(SAVE_DIR_PROCESSED, SAVE_DIR_PROCESSED, SAVE_DIR_PROCESSED),
+        command="--model_dir {} --data_dir {}".format(MODEL_SAVE_DIR, SAVE_DIR_PROCESSED),
         task_id="docker-airflow-val",
         do_xcom_push=False,
         network_mode="bridge",

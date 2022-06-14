@@ -10,11 +10,11 @@ TARGETS_PATH_VALID = "target_val.csv"
 MODEL_PATH = 'model.pkl'
 METRICS_FILEPATH = 'metrics.txt'
 
+
 @click.command()
 @click.option("--model_dir")
 @click.option("--data_dir")
-@click.option("--metric_dir")
-def main(model_dir: str, data_dir: str, metric_dir: str) -> None:
+def main(model_dir: str, data_dir: str) -> None:
     data = pd.read_csv(os.path.join(data_dir, FEATURES_PATH_VALID))
     target = pd.read_csv(os.path.join(data_dir, TARGETS_PATH_VALID))
     
@@ -28,10 +28,9 @@ def main(model_dir: str, data_dir: str, metric_dir: str) -> None:
     accuracy = accuracy_score(target, predictions)
     f1_score_value = f1_score(target, predictions)
 
-    os.makedirs(metric_dir, exist_ok=True)
-
-    with open(os.path.join(metric_dir, METRICS_FILEPATH), "w") as fout:
+    with open(os.path.join(model_dir, METRICS_FILEPATH), "w") as fout:
         fout.write("roc_auc: {}, accuracy: {}, f1_score {}".format(roc_auc, accuracy, f1_score_value))
+
 
 if __name__ == '__main__':
     main()

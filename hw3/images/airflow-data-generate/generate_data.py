@@ -4,8 +4,10 @@ import click
 import pandas as pd
 from sklearn.datasets import make_classification
 
+
 FEATURES_PATH = "features.csv"
 TARGETS_PATH = "target.csv"
+
 
 @click.command()
 @click.option("--out_dir")
@@ -16,6 +18,7 @@ def main(out_dir: str) -> None:
     targets = pd.DataFrame(targets, columns=["target"])
     features.to_csv(os.path.join(out_dir, FEATURES_PATH), index=False)
     targets.to_csv(os.path.join(out_dir, TARGETS_PATH), index=False)
+
 
 if __name__ == '__main__':
     main()

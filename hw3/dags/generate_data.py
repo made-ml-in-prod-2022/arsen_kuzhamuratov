@@ -6,14 +6,15 @@ from airflow.providers.docker.operators.docker import DockerOperator
 from airflow.utils.dates import days_ago
 from docker.types import Mount
 
-SAVE_DIR_GENERATE = "/data/raw/{{ ds }}"
 
+SAVE_DIR_GENERATE = "/data/raw/{{ ds }}"
 default_args = {
     "owner": "airflow",
     "email": ["airflow@example.com"],
     "retries": 1,
     "retry_delay": timedelta(minutes=5),
 }
+
 
 with DAG(
         "data_generator",

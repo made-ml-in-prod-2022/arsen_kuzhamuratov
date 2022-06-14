@@ -2,13 +2,14 @@ from datetime import timedelta
 
 from airflow import DAG
 from airflow.providers.docker.operators.docker import DockerOperator
-from airflow.sensors.filesystem import FileSensor
 from airflow.utils.dates import days_ago
+from airflow.models import Variable
 from docker.types import Mount
 
-SAVE_DIR_GENERATE = "/data/raw/{{ ds }}"
-SAVE_DIR_PROCESSED = "/data/processed/{{ ds }}"
-MODEL_PATH = "/data/processed/{{ ds }}/model.pkl"
+
+DIR_PROCESSED = "/data/processed/{{ ds }}"
+MODEL_PATH = Variable.get("MODELPATH")
+PREDICTIONS_PATH = "/data/predictions/{{ ds }}"
 MOUNT_SOURCE = Mount(
     source="/home/arsen/Arsen/MADE-DS21/arsen_kuzhamuratov/hw3/data",
     target="/data",
@@ -31,7 +32,7 @@ with DAG(
 ) as dag:
     predict = DockerOperator(
         image="airflow-model-predict",
-        command="--in_dir {} --model_path {} --pred_path {}/predictions.csv".format(SAVE_DIR_PROCESSED, MODEL_PATH, SAVE_DIR_PROCESSED),
+        command="--in_dir {} --model_dir {} --pred_dir {}".format(DIR_PROCESSED, MODEL_PATH, PREDICTIONS_PATH),
         task_id="docker-airflow-predict",
         do_xcom_push=False,
         network_mode="bridge",
