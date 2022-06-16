@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fastapi-ml-single
+  labels:
+    app: fastapi-ml
+spec:
+  containers:
+    - image: kuzhamuratov/online_inference:v1
+      name: fastapi-ml
+      ports:
+        - containerPort: 8000
